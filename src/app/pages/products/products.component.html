@@ -1,1 +1,30 @@
-<p>products works!</p>
+<h2>Product Catalog</h2>
+<div class="row">
+@for (product of products; track product.id) {
+    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <mat-card class="example-card">
+            <mat-card-header>
+              
+              <mat-card-title>{{product.title}}</mat-card-title>
+              
+            </mat-card-header>
+            <img mat-card-image [src]="product.image" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+               {{product.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>view</button>
+              <button mat-button>cart</button>
+            </mat-card-actions>
+          </mat-card>
+
+    </div>
+    
+
+}
+</div>
+
+
+  

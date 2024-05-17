@@ -1,4 +1,16 @@
 
 mat-sidenav-container{
-    height: 75vh;
+    flex:1 1 auto;
+
 }
+mat-sidenav{
+    min-width: 300px;
+}
+.contenedor {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  .padding{
+    padding: 20px;
+  }
