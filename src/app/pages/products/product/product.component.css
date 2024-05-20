@@ -1,0 +1,23 @@
+img{
+    height: 200px;
+    object-fit: scale-down;
+}
+mat-card{
+    margin-bottom: 10px;
+    min-height: 400px;
+}
+.price{
+    font-size: large;
+    font-weight: bold;
+    text-align: end;
+
+}
+.title{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 10px;
+}
+.category{
+    margin-left: 10px;
+}

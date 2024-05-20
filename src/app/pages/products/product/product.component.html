@@ -1,0 +1,23 @@
+
+<mat-card class="example-card">
+   
+      
+      <div class="title">{{product.title | slice:0:15}} </div>
+      <div class="category">
+        <mat-chip>{{product.category}}</mat-chip>
+      </div>
+    
+    <img mat-card-image [src]="product.image" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p class="price">{{product.price | currency}}</p>
+      <p>
+       {{product.description | slice:0:50}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button (click)="viewItem()">
+        <mat-icon>visibility</mat-icon>
+      </button>
+      <button mat-button (click)="addToCart()"><mat-icon >add_shopping_cart</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
